@@ -1,8 +1,11 @@
 from flask import Flask
 from flask_restplus import Resource, Api, fields
 from scrapper import despesas_total, despesas_por_funcao
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
+
 api = Api(app = app, 
 		  version = "1.0", 
 		  title = "Transparência Maranhão", 

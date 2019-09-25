@@ -12,6 +12,7 @@ lxml = "*"
 flask-restplus = "*"
 babel = "*"
 gunicorn = "*"
+flask-cors = "*"
 
 [requires]
 python_version = "3.6"
